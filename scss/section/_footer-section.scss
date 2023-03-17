@@ -1,0 +1,64 @@
+@use '../custom' as *;
+
+// IMPORTED COMPONENT
+@use '../component/animations' as *;
+@use '../component/buttons' as *;
+@use '../component/mixin' as *;
+@use '../component/typography' as *;
+
+
+footer {
+    background: $primary;
+    padding: 3rem 0;
+    position: relative;
+
+    .footer-logo {
+
+        .download {
+            margin-top: 12px;
+            display: flex;
+            gap: 1rem;
+            background-color: $secondary;
+            padding: .44rem;
+            border-radius: 4px;
+            width: 208.5px;
+            cursor: pointer;
+
+            .download-link {
+                display: block;
+            }
+        }
+    }
+
+    ul {
+        li {
+            padding: 8px 0;
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    color: $gray-400;
+                }
+            }
+        }
+    }
+
+    hr {
+        border: 1px solid #FFFFFF;
+    }
+
+    .moveup {
+        position: absolute;
+        bottom: 0;
+        right: 15px;
+        // background-color: yellowgreen;
+
+        a {
+            font-size: 2rem;
+            &:hover{
+                color: #FFFFFF;
+            }
+        }
+    }
+}

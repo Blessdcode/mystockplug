@@ -1,0 +1,27 @@
+// IMPORTED CUSTOM
+
+
+@use 'custom';
+
+// IMPORTED COMPONENT
+
+@use 'component/animations';
+@use 'component/buttons';
+@use 'component/mixin';
+@use 'component/typography';
+
+
+
+// IMPORTED SECTION
+@use 'section/navbar';
+@use 'section/hero-section';
+@use 'section/main-section';
+@use 'section/aside-section';
+@use 'section/footer-section';
+@use 'section/blog-section';
+
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}

@@ -1,0 +1,69 @@
+// MAIN COLORS
+
+$mid-dark: #000718;
+$green: #1BD47B;
+
+
+
+/* COLORS */
+// scss-docs-start gray-color-variables
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+
+$primary: $mid-dark ;
+$secondary: $green ;
+
+
+// $navbar-dark-color: rgba($white, .55);
+// $navbar-dark-hover-color: $primary;
+// $navbar-dark-active-color: $primary ;
+// $navbar-dark-toggler-border-color: $primary;
+// $navbar-dark-brand-color: $navbar-dark-active-color ;
+// $navbar-dark-brand-hover-color: $navbar-dark-active-color ;
+
+
+// $navbar-dark-hover-color: rgba($primary, .1);
+// $navbar-dark-active-color: rgba($primary, .1);
+
+// $navbar-dark-color: rgba($white, .55);
+
+$navbar-dark-color: rgba($white, .55) !default;
+$navbar-dark-hover-color: rgba($white, .1);
+$navbar-dark-active-color: $primary ;
+$navbar-dark-toggler-border-color: rgba($primary, .1) !default;
+$navbar-dark-brand-color: $navbar-dark-active-color !default;
+$navbar-dark-brand-hover-color: $navbar-dark-active-color !default;
+$navbar-dark-toggler-border-hover-color: rgba($primary, .1) !default;
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $primary;
+    border-radius: 6px;
+}
+
+
+
+
+$input-border-color: none;
+
+
+// FONT FAMILY
+
+
+// IMPORT BOOTSTRAP
+
+@import"../node_modules/bootstrap/scss/bootstrap.scss"

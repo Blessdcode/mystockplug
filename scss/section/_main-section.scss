@@ -1,0 +1,160 @@
+@use '../custom' as *;
+
+// IMPORTED COMPONENT
+@use '../component/animations' as *;
+@use '../component/buttons' as *;
+@use '../component/mixin' as *;
+@use '../component/typography' as *;
+
+
+.fitter {
+
+    .fitter-item {
+        h3 {
+            font-size: 1rem;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            color: #66717E;
+            cursor: pointer;
+            padding: 8px;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    .active {
+        h3 {
+            background: $secondary;
+            color: $primary !important;
+            border-radius: 4px;
+            width: 34px;
+            height: 36px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 48x;
+
+        }
+    }
+}
+
+.dropDown {
+    border: 1px solid #A3AAB2;
+    border-radius: 4px;
+
+    .all-btn {
+        &:focus {
+            border: none;
+        }
+    }
+
+    .drop-btn {
+        border: none;
+    }
+
+    ul {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        li{
+            display: block;
+            &:hover{
+                background-color: $gray-100;
+            }
+        }
+    }
+}
+
+
+section {
+    margin-bottom: 1rem;
+
+    .card {
+        height: 610px;
+        position: relative;
+
+        .card-body {
+            .subtitle {
+                display: flex;
+                gap: .666rem;
+                align-items: center;
+                margin: .784rem 0;
+
+                span {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 4rem;
+                    background: #66717E;
+                    margin: 0;
+                    position: relative;
+                    top: -5px;
+                }
+            }
+
+            .card-title {
+                font-weight: 600;
+                font-size: 1.6rem;
+                line-height: 32px;
+                color: #0A0B0D;
+
+
+                @include media-breakpoint-down(md) {
+                    font-size: 1.3rem;
+                    line-height: 26px;
+                    margin-bottom: .78rem;
+                }
+            }
+
+            .card-text {
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 24px;
+                letter-spacing: 0.15px;
+            }
+
+            button {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 8px 8px 0px;
+                gap: 8px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                color: $secondary;
+                font-size: 1.1rem;
+                opacity: .7;
+                position: absolute;
+                bottom: 14px;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .navigation {
+        .pagination {
+            .page-item {
+                .page-link {
+                    border: none !important;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: $primary;
+
+                    &:hover,
+                    &:active {
+                        background-color: $secondary;
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+@use '../custom' as *;
+
+// IMPORTED COMPONENT
+@use '../component/animations' as *;
+@use '../component/buttons' as *;
+@use '../component/mixin' as *;
+@use '../component/typography' as *;
+
+
+
+
+.hero-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(/img/hero-image.png);
+    height: 85vh;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: $white;
+    margin-top: 6.5rem;
+
+    h1 {
+        font-weight: 700;
+        font-size: 3.5rem;
+        line-height: 64px;
+        text-align: center;
+        width: 80%;
+    }
+
+    p {
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.15px;
+        width: 60%;
+        padding-top: 1.3rem;
+    }
+
+    .det {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 1rem 0;
+
+        h3 {
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+        }
+
+        span {
+            width: 12px;
+            height: 12px;
+            background: #F4F5F6;
+            border-radius: 50px;
+        }
+    }
+
+    button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        gap: 8px;
+        width: 147px;
+        height: 56px;
+        background: $secondary;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+
+        &:hover{
+            background-color: #F4F5F6;
+        }
+
+        i {
+            color: $primary !important;
+        }
+
+    }
+}
+
+
+//  RESPONSIVE SECTION 
+
+@include media-breakpoint-down(md) {
+    .hero-page {
+        height: 100vh;
+
+        h1 {
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 44px;
+            text-align: center;
+            width: 100%;
+        }
+
+        p {
+
+            line-height: 18px;
+            width: 100%;
+            padding-top: .7rem;
+            font-size: .78rem;
+        }
+        .det {
+           flex-direction: column;
+            gap: 5px;
+            padding: 1rem 0;
+    
+            h3 {
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 24px;
+                letter-spacing: 0.15px;
+            }
+    
+            span {
+                width: 12px;
+                height: 12px;
+                background: #F4F5F6;
+                border-radius: 50px;
+            }
+        }
+    }
+}

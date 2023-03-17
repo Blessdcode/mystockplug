@@ -1,0 +1,46 @@
+@use '../custom' as *;
+
+// IMPORTED COMPONENT
+@use '../component/animations' as *;
+@use '../component/buttons' as *;
+@use '../component/mixin' as *;
+@use '../component/typography' as *;
+
+
+.newsletter {
+    margin: 3rem 0;
+
+    .news-area {
+        background: #F5F5F5;
+        padding: 2rem;
+
+        .form {
+            .title {
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 50px;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .p-title {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        form {
+            input {
+                border: 1px solid #66717E;
+                background-color: transparent;
+
+                &:focus {
+                    border: none;
+                }
+            }
+        }
+    }
+}

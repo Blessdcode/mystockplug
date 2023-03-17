@@ -1,0 +1,6 @@
+@use '../custom' as *;
+
+
+@mixin fontfamily {
+    font-family: 'Inter', sans-serif;
+}

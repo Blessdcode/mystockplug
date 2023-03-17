@@ -1,0 +1,43 @@
+@use '../custom' as *;
+
+
+.button {
+    position: relative;
+
+    .whitye {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 24px;
+        padding: 0 .855rem;
+
+        &:hover {
+            color: $secondary !important;
+        }
+    }
+
+    .daryk {
+        background: $secondary;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 24px;
+        padding: 0 .855rem;
+        padding: 14px;
+
+        &:hover {
+            color: $secondary !important;
+            background-color: $white;
+        }
+    }
+}
+
+// @include media-breakpoint-down(md) {
+//     .button {
+//         position: absolute;
+//         z-index: 100;
+//         bottom: -8rem;
+//         right: 32px;
+//     }
+// }
